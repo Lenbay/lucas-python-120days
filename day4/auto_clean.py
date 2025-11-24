@@ -30,4 +30,4 @@ for filename in os.listdir(desktop):
     print(f"正在处理：{filename}")
 
     os.makedirs(target, exist_ok=True)
-    shutil.move(file_path, target)
+    shutil.move(file_path, os.path.join(target,filename))
